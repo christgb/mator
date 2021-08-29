@@ -1,0 +1,84 @@
+.hero-featured-box {
+    width: 95vw;
+    font-size: 3em;
+}
+
+.hero-featured-box .card {
+    border-radius: 0px;
+    border: none;
+}
+
+.hero-featured-box .card-header {
+    background: orange;
+    border-radius: 0px;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.contact-div .card {
+    left: 57.5vw;
+    bottom: 10vh;
+    width: 75%;
+    border-radius: 0px;
+}
+
+.contact-div button {
+    background-color: #198754;
+    color: #fff;
+    border: none;
+}
+
+.contact-div button:hover {
+    background-color: #e02a2a;
+}
+
+.contact-div-mobile {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.contact-div-mobile button {
+    background-color: #e04646;
+    color: #fff;
+}
+
+.container__diagonal {
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Create diagonal sides */
+    transform: skewY(-5deg);
+
+    /* Background color */
+    background-color: black;
+
+    /* Displayed under the main content */
+    z-index: -1;
+}
+
+.container__diagonal > * {
+    transform:skewY(5deg);
+}
+
+.property-features {
+    display: flex;
+}
+
+.property-features-item {
+    margin-right: 1em;
+}
+
+.property-title {
+    font-weight: bolder;
+}
+
+.property-features-item{
+    padding: 1rem;
+}

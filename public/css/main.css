@@ -1,0 +1,482 @@
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/**
+* Desktop Navigation
+*/
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.submit {
+    color: #fff;
+    background: #198754;
+    padding: 7px 22px;
+    margin: 0 0 0 15px;
+    border-radius: 70px;
+    border: 2px solid #198754;
+    transition: all ease-in-out 0.3s;
+    font-weight: lighter;
+    line-height: 1;
+    font-size: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.submit:hover {
+    background: none;
+    color: #fff;
+}
+
+.submit:focus {
+    color: #fff;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 12px;
+}
+
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+    padding: 6px 2px;
+}
+
+.nav-item {
+    padding-left: 25px;
+}
+
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 10px;
+}
+
+.navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #f82249;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before, .navbar li:hover>a:before, .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+    color: #fff;
+}
+
+/*  Header  */
+
+#header {
+    position: fixed;
+    height: 90px;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+/* CSS DEL LIST */
+
+@media all {
+    .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+    .fa-angle-right:before {
+        content: "\f105";
+    }
+    .fas {
+        font-family: "Font Awesome 5 Free";
+    }
+    .fas {
+        font-weight: 900;
+    }
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.eot);
+    src: url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.eot);
+    src: url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.woff) format("woff"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"), url(https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+/* boton enviar */
+
+.submit {
+    color: #fff;
+    padding: 15px 22px;
+    margin: 0 0 0 15px;
+    border-radius: 50px;
+    border: 2px solid #198754;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 13px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.submit:hover {
+    background: none;
+    color: #fff;
+}
+
+.submit:focus {
+    color: #fff;
+}
+
+/* Barra de busqueda */
+
+.bar {
+    position: relative;
+    bottom: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.bar select {
+    color: black;
+    border-radius: 0px;
+    width: 100%;
+    height: 135%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+#boton {
+    position: relative;
+    border-radius: 0px;
+    width: 100%;
+    height: 135%;
+    font-size: 19px;
+}
+
+.banner {
+    border-style: solid;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    width: 100%;
+    background: #000000;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-image: url("https://modern.b-cdn.net/wp-content/uploads/2017/10/banner.jpg");
+    background-position: center 0%;
+}
+
+/* Hover efecto botones */
+
+.hover-effect1 {
+    text-align: center;
+    position: relative;
+    left: 18rem;
+}
+
+.hover-effect1 ul li {
+    display: inline-block;
+}
+
+.hover-effect1 ul li a {
+    font-size: 20px;
+    color: #fff;
+    margin: 0px 20px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #198754;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.hover-effect1 ul li:hover a {
+    border-radius: 50%;
+    background: #B71C1C;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/* footer de la pagina */
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text, .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Mouser over */
+
+/* stroke */
+
+nav ul li a, nav ul li a:after, nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav.stroke ul li a, nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after, nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+/* slide */
